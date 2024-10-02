@@ -60,6 +60,17 @@ This bug check is issued when Windows fails to initialize the Hardware Abstracti
 This information was located within nt!KiForwardTick.
 
 
+# BAD_POOL_CALLER (0xC2)
+# If Parameter 1 is 0xE
+Parameter 2: Node Number
+Parameter 3: Pool Type
+Parameter 4: Pool Tag
+
+This bug check is issued when a request is made to allocate heap memory with a node number greater than the number of nodes on a system. This bug check should never occur unless extreme memory corruption has taken place, or if a driver called this function using an offset from the kernel's base address (as this function is not exported).
+
+This information was located within nt!ExAllocateHeapPool (using the functions nt!ExAllocatePool3 and nt!ExAllocatePool2 to get the 2nd and 4th parameters respectively).
+
+
 # FAST_ERESOURCE_PRECONDITION_VIOLATION (0x1C6)
 ## If Parameter 1 is 0x18
 Parameter 2: 0<br />
