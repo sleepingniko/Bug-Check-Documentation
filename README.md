@@ -62,9 +62,9 @@ This information was located within nt!KiForwardTick.
 
 # BAD_POOL_CALLER (0xC2)
 # If Parameter 1 is 0xE
-Parameter 2: Node Number
-Parameter 3: Pool Type
-Parameter 4: Pool Tag
+Parameter 2: Node Number<br />
+Parameter 3: Pool Type<br />
+Parameter 4: Pool Tag<br />
 
 This bug check is issued when a request is made to allocate heap memory with a node number greater than the number of nodes on a system. This bug check should never occur unless extreme memory corruption has taken place, or if a driver called this function using an offset from the kernel's base address (as this function is not exported).
 
