@@ -1,6 +1,11 @@
 # Bug-Check-Documentation
 This repository aims to document undocumented or partially undocumented blue screen codes and parameters.
 
+# Notice
+The information provided in this repository was obtained via (primarily) reverse engineering and online resources. There is a good chance that some of the information is incorrect, so do take it with a grain of salt. Additionally, some of the reserved parameters may have a different meaning depending on the function it was located within. As time goes on, I'll add individual functions as well.
+
+If you actually read this notice, then good for you! May your blue screen troubleshootings be smooth and clean.
+
 I will add a table of contents eventually, but in the meantime this is good enough.
 
 # CACHE_MANAGER (0x34)
